@@ -41,7 +41,7 @@ class BaiduTongji_Plugin implements Typecho_Plugin_Interface
     public static function config(Typecho_Widget_Helper_Form $form)
     {
         /** 分类名称 */
-        $baiduAccount = new Typecho_Widget_Helper_Form_Element_Text('baiduAccount', NULL, '百度统计帐号', _t('百度统计帐号'), _t('此帐号可在百度统计管理平台获取代码中提取；位于hm.baidu.com/hm.js?后那串字符。'));
+        $baiduAccount = new Typecho_Widget_Helper_Form_Element_Text('baiduAccount', NULL, '请输入百度统计帐号', _t('百度统计帐号'), _t('此帐号可在百度统计管理平台获取代码中提取；位于hm.baidu.com/hm.js?后那串字符。'));
         $form->addInput($baiduAccount);
     }
 
