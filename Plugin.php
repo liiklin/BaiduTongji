@@ -64,7 +64,7 @@ class BaiduTongji_Plugin implements Typecho_Plugin_Interface
      {
          $baiduAccount = Typecho_Widget::widget('Widget_Options')->plugin('BaiduTongji')->baiduAccount;
          if ($baiduAccount) {
-           echo "<script type=\"text/javascript\">var _hmt=_hmt||[];(function(){var b=document.createElement(\"script\");b.src=\"//hm.baidu.com/hm.js?\"+\"$baiduAccount\";var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(b,a)})();</script>";
+           echo "<script type=\"text/javascript\">var _hmt=_hmt||[];(function(){var b=document.createElement(\"script\");b.src=\"//hm.baidu.com/hm.js?$baiduAccount\";var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(b,a)})();</script>";
          }
      }
 }
